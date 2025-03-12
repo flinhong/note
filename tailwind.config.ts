@@ -7,8 +7,16 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['IBM Plex Mono','JetBrains Mono', 'Sawarabi Mincho', ...defaultTheme.fontFamily.sans],
-        mono: ['IBM Plex Mono','JetBrains Mono', 'Sawarabi Mincho', ...defaultTheme.fontFamily.mono],
+        sans: [
+          'IBM Plex Mono',
+          'Sawarabi Mincho',
+          ...defaultTheme.fontFamily.sans,
+        ],
+        mono: [
+          'IBM Plex Mono',
+          'Sawarabi Mincho',
+          ...defaultTheme.fontFamily.mono,
+        ],
       },
       colors: {
         background: 'hsl(var(--background))',
