@@ -1,7 +1,7 @@
 {
-  "name": "enscribe.dev",
+  "name": "note.astro",
   "type": "module",
-  "version": "3.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -9,7 +9,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prettier": "prettier --write ./src/**/*.{astro,ts,tsx,css}"
+    "prettier": "prettier --write ./src/**/*.{astro,ts,tsx,css}",
+    "deploy": "astro build && surge ./dist indev-note.surge.sh"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
