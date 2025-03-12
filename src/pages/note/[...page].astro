@@ -14,34 +14,34 @@ export async function getStaticPaths({
   paginate: PaginateFunction
 }) {
   const allPosts = await getCollection(
-    'blog',
-    ({ data }) => !data.draft && !data.hidden,
+    'note',
+    ({ data }) => !data.draft && !data.hidden
   )
   return paginate(
     allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
-    { pageSize: SITE.POSTS_PER_PAGE },
+    { pageSize: SITE.POSTS_PER_PAGE }
   )
 }
 
 const { page } = Astro.props
 
 const postsByYear = page.data.reduce(
-  (acc: Record<string, CollectionEntry<'blog'>[]>, post) => {
+  (acc: Record<string, CollectionEntry<'note'>[]>, post) => {
     const year = post.data.date.getFullYear().toString()
     ;(acc[year] ??= []).push(post)
     return acc
   },
-  {},
+  {}
 )
 
 const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
 ---
 
-<Layout title="Blog" description="Blog">
+<Layout title="Note" description="Note">
   <Container class="flex grow flex-col gap-y-6">
     <Breadcrumbs
       items={[
-        { label: 'Blog', href: '/blog', icon: 'lucide:archive' },
+        { label: 'Note', href: '/note', icon: 'lucide:archive' },
         { label: `Page ${page.currentPage}`, icon: 'lucide:folder-open' },
       ]}
     />
@@ -66,7 +66,7 @@ const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
     <PaginationComponent
       currentPage={page.currentPage}
       totalPages={page.lastPage}
-      baseUrl="/blog/"
+      baseUrl="/note/"
       client:load
     />
   </Container>
