@@ -1,15 +1,15 @@
-![Showcase Card](/public/static/showcase-card.png)
+<!-- ![Showcase Card](/public/static/showcase-card.png) -->
 
 <div align="center">
 
-## enscribe.dev
+## The theme forked from `enscribe.dev`
 
 [![CodeFactor]](https://www.codefactor.io/repository/github/jktrn/enscribe.dev)
 ![Stargazers]
 [![Code License]](LICENSE.md)
 [![Content License]](LICENSE.content.md)
 
-[enscribe.dev](https://enscribe.dev) is my personal information security blog—built with [Astro](https://astro.build/), [Tailwind](https://tailwindcss.com/), and [shadcn/ui](https://ui.shadcn.com/). Based on my personal blogging template, [astro-erudite](https://github.com/jktrn/astro-erudite).
+[enscribe.dev](https://enscribe.dev) is an information security blog - built with [Astro](https://astro.build/), [Tailwind](https://tailwindcss.com/), and [shadcn/ui](https://ui.shadcn.com/). Based on my personal blogging template, [astro-erudite](https://github.com/jktrn/astro-erudite).
 
 </div>
 
@@ -71,18 +71,6 @@ From the [Website Content License](LICENSE.md#website-content-license) section:
 > To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/ or view [LICENSE.content.md](./LICENSE.content.md).
 
 For full license details and permission requests, please refer to the [LICENSE.md](LICENSE.md) file in this repository or contact [jason@enscribe.dev](mailto:jason@enscribe.dev).
-
----
-
-### Star History
-
-<a href="https://star-history.com/#jktrn/enscribe.dev&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=jktrn/enscribe.dev&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=jktrn/enscribe.dev&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=jktrn/enscribe.dev&type=Date" />
- </picture>
-</a>
 
 
 ---
