@@ -1,7 +1,7 @@
 ---
-import BlogCard from '@/components/BlogCard.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import Container from '@/components/Container.astro'
+import NoteCard from '@/components/NoteCard.astro'
 import PaginationComponent from '@/components/ui/pagination'
 import { SITE } from '@/consts'
 import Layout from '@/layouts/Layout.astro'
@@ -54,7 +54,7 @@ const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
             <ul class="not-prose flex flex-col gap-4">
               {postsByYear[year].map((post) => (
                 <li>
-                  <BlogCard entry={post} />
+                  <NoteCard entry={post} />
                 </li>
               ))}
             </ul>
