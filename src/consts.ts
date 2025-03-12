@@ -13,26 +13,26 @@ export type Link = {
 }
 
 export const SITE: Site = {
-  TITLE: 'enscribe.dev',
+  TITLE: 'inDev. Notes',
   DESCRIPTION:
-    'Freelance frontend web development and cybersecurity shenanigans.',
-  EMAIL: 'jason@enscribe.dev',
-  NUM_POSTS_ON_HOMEPAGE: 2,
-  POSTS_PER_PAGE: 4,
-  SITEURL: 'https://enscribe.dev',
+    'Freelance front-end web development and semiconductor engineer.',
+  EMAIL: 'hong@email.com',
+  NUM_POSTS_ON_HOMEPAGE: 3,
+  POSTS_PER_PAGE: 7,
+  SITEURL: 'https://note.frankindev.com',
 }
 
 export const NAV_LINKS: Link[] = [
   { href: '/', label: 'home' },
-  { href: '/blog', label: 'blog' },
+  { href: '/note', label: 'note' },
   // { href: '/authors', label: 'authors' },
   // { href: '/about', label: 'about' },
-  // { href: '/tags', label: 'tags' },
+  { href: '/tags', label: 'tags' },
 ]
 
 export const SOCIAL_LINKS: Link[] = [
-  { href: 'https://github.com/jktrn', label: 'GitHub' },
-  { href: 'https://twitter.com/enscry', label: 'Twitter' },
-  { href: 'jason@enscribe.dev', label: 'Email' },
+  { href: 'https://github.com/flinhong', label: 'GitHub' },
+  { href: 'https://twitter.com/flinhong', label: 'Twitter' },
+  { href: 'hong@email.com', label: 'Email' },
   { href: '/rss.xml', label: 'RSS' },
 ]
