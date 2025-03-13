@@ -29,6 +29,6 @@ export function transformerNotationSkip(
       if (classActivePre) this.addClassToHast(this.pre, classActivePre)
       return false
     },
-    false, // remove empty lines
+    undefined, // remove empty lines
   )
 }
