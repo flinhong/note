@@ -2,16 +2,25 @@
 import Container from '@/components/Container.astro'
 import { SOCIAL_LINKS } from '@/consts'
 import SocialIcons from './SocialIcons.astro'
+
+import { createHash } from 'crypto' // Example using Node.js crypto module (for server-side, you might need a browser-compatible hashing library if you want client-side generation too)
+const pagePath = Astro.url.pathname // Get the current page's path
+const hash = createHash('sha256') // Choose a hashing algorithm (SHA-256 is common, you could also use 'md5' for shorter hashes but avoid for security-sensitive contexts)
+hash.update(pagePath)
+const pageHash = hash.digest('hex').substring(0, 11) // Get the hexadecimal hash and shorten it
 ---
 
 <footer class="py-4">
   <Container>
     <div
-      class="flex flex-col items-center justify-center gap-y-2 sm:flex-row sm:justify-between"
+      class="flex flex-col items-center justify-center gap-y-2 px-8 sm:flex-row sm:items-baseline sm:justify-between"
     >
       <div class="flex items-center">
-        <p class="text-center text-sm text-muted-foreground">
+        <p class="text-center text-sm text-muted-foreground md:text-left">
           &copy; {new Date().getFullYear()} François in Development
+          <br /><span class="text-accent" data-page-hash={pageHash}
+            ># {pageHash}</span
+          >
         </p>
       </div>
       <SocialIcons links={SOCIAL_LINKS} />
