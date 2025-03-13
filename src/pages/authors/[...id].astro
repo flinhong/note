@@ -1,8 +1,8 @@
 ---
 import AuthorCard from '@/components/AuthorCard.astro'
-import BlogCard from '@/components/BlogCard.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import Container from '@/components/Container.astro'
+import NoteCard from '@/components/NoteCard.astro'
 import Layout from '@/layouts/Layout.astro'
 import { type CollectionEntry, getCollection } from 'astro:content'
 
@@ -20,7 +20,7 @@ type Props = {
 
 const { author } = Astro.props
 
-const allPosts = await getCollection('blog')
+const allPosts = await getCollection('note')
 const authorPosts = allPosts
   .filter((post) => {
     return (
@@ -54,7 +54,7 @@ const authorPosts = allPosts
           <ul class="not-prose flex flex-col gap-4">
             {authorPosts.map((post) => (
               <li>
-                <BlogCard entry={post} />
+                <NoteCard entry={post} />
               </li>
             ))}
           </ul>

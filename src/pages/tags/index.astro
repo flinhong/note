@@ -7,8 +7,8 @@ import Layout from '@/layouts/Layout.astro'
 import { Icon } from 'astro-icon/components'
 import { getCollection } from 'astro:content'
 
-const blog = (await getCollection('blog')).filter(
-  (post) => !post.data.draft && !post.data.hidden,
+const blog = (await getCollection('note')).filter(
+  (post) => !post.data.draft && !post.data.hidden
 )
 
 const tags = blog
