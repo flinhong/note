@@ -14,8 +14,7 @@ export type Link = {
 
 export const SITE: Site = {
   TITLE: 'inDev. Notes',
-  DESCRIPTION:
-    'Freelance front-end web development and semiconductor engineer.',
+  DESCRIPTION: 'Notes for daily logging.',
   EMAIL: 'hong@email.com',
   NUM_POSTS_ON_HOMEPAGE: 3,
   POSTS_PER_PAGE: 7,

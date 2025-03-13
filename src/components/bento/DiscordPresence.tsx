@@ -7,7 +7,7 @@ import AvatarComponent from '@/components/ui/avatar'
 
 const DiscordPresence = () => {
   const { data: lanyard, isLoading } = useLanyard({
-    userId: '747519888347627550',
+    userId: '1271302848918982668',
   })
 
   const mainActivity = useMemo(() => {
@@ -67,7 +67,7 @@ const DiscordPresence = () => {
           <div className="flex justify-between gap-x-1">
             <div className="relative">
               <AvatarComponent
-                src="/static/avatar.webp"
+                src="/static/note_logo.svg"
                 alt="Avatar"
                 fallback="e"
                 className="-mt-[4.5rem] aspect-square size-24 rounded-full"
@@ -108,9 +108,9 @@ const DiscordPresence = () => {
             </div>
           </div>
           <div className="flex flex-col gap-y-1 rounded-xl bg-secondary/50 p-3">
-            <span className="text-base leading-none">enscribe</span>
+            <span className="text-base leading-none">François Lin</span>
             <span className="text-xs leading-none text-muted-foreground">
-              @enscribe
+              @flinhong
             </span>
           </div>
           <div className="flex grow rounded-xl bg-secondary/50 px-3 py-2">

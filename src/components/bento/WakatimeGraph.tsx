@@ -55,7 +55,7 @@ const WakatimeGraph = ({ omitLanguages = [] }: Props) => {
 
   useEffect(() => {
     fetch(
-      'https://wakatime.com/share/@jktrn/ef6e633b-589d-44f2-9ae6-0eb93445cf2a.json',
+      'https://wakatime.com/share/@flinhong/75235b5c-1deb-4780-a071-f1e053b94b3e.json',
     )
       .then((response) => {
         if (!response.ok) throw new Error('Failed to fetch data')

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { FaSpotify } from 'react-icons/fa'
+import { FaLastfm } from 'react-icons/fa'
 import { Skeleton } from '@/components/ui/skeleton'
 import { MoveUpRight } from 'lucide-react'
 
@@ -17,7 +18,7 @@ const SpotifyPresence = () => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    fetch('https://lastfm-last-played.biancarosa.com.br/enscribe/latest-song')
+    fetch('https://lastfm-last-played.biancarosa.com.br/flinhong/latest-song')
       .then((response) => response.json())
       .then((data) => {
         setDisplayData(data.track)
@@ -42,7 +43,8 @@ const SpotifyPresence = () => {
           </div>
         </div>
         <div className="absolute right-0 top-0 m-3 text-primary">
-          <FaSpotify size={56} />
+          {/* <FaSpotify size={56} /> */}
+          <FaLastfm size={56} />
         </div>
         <Skeleton className="absolute bottom-0 right-0 m-3 h-10 w-10 rounded-full" />
       </div>
@@ -97,7 +99,8 @@ const SpotifyPresence = () => {
         </div>
       </div>
       <div className="absolute right-0 top-0 m-3 text-primary">
-        <FaSpotify size={56} />
+        {/* <FaSpotify size={56} /> */}
+        <FaLastfm size={56} />
       </div>
       <a
         href={url}
