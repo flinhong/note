@@ -1,0 +1,47 @@
+---
+title: "CSS - A Beginner's Guide"
+description: 'Cascading Style Sheets (CSS) is an essential part of web development that integrates all relevant information related to web page displays. This guide will help you understand the basics of CSS and how to use it to format the look and structure of web pages, as well as how to set design features such as basic layout, colours, and fonts.'
+date: 2025-03-14
+tags: ['css', 'guide']
+image: 'assets/banner.webp'
+authors: ['frank']
+---
+
+import InfoBox from '@/components/mdx/InfoBox.astro'
+
+## Introduction
+
+A document is usually a text file created using tag language - HTML is the common markup language, but you can also use XML, SVG, or XHTML. The document is then styled using CSS (Cascading Style Sheets), which is a style sheet language that describes the look and formatting of a document written in a markup language. CSS is used to control the layout of multiple web pages all at once, and it can be used to define the look and feel of a website, including colours, fonts, and spacing. Along with HTML and Javascript, CSS is one of the three core technologies of the World Wide Web. All three standards and specifications are maintained by the World Wide Web Consortium (W3C).
+
+## Why do we use CSS?
+
+Here's a breakdown of why CSS is essential and what it allows us to do:
+
+1. Separation of Concerns (Content vs. Presentation):
+- **HTML handles structure and content: **HTML's job is to define the meaning of your web page – headings, paragraphs, lists, images, links, etc. It's about what the page is.
+- CSS handles presentation and style: CSS takes over the responsibility of how that HTML content looks. This separation is incredibly valuable for:
+  - **Cleaner Code: **Your HTML remains focused on content, making it easier to read, understand, and maintain.
+Maintainability: If you want to change the look of your website (e.g., change the font, colors, layout across all pages), you can do it by modifying your CSS files without touching the HTML content. This saves a massive amount of time and effort.
+  - **Collaboration: **Front-end developers can focus on the visual design (CSS), while others might work on the structure (HTML) or functionality (JavaScript) more easily.
+
+2. Styling and Visual Appeal:
+- **Control over appearance: **CSS gives you granular control over almost every visual aspect of your web page, including:
+  - **Colors: **Background colors, text colors, border colors.
+  - **Fonts: **Font families, sizes, styles (bold, italic), line height, spacing.
+  - **Layout: **Positioning elements on the page (using techniques like Flexbox, Grid, or older methods like floats), creating columns, aligning content.
+  - **Spacing and Margins: **Controlling the space around and between elements.
+  - **Borders and Outlines: **Adding visual separation and structure.
+  - **Images and Backgrounds: **Styling images, setting background images and patterns.
+  - **Effects and Animations: **Creating hover effects, transitions, and animations to enhance user experience.
+
+3. Consistency and Branding:
+  - **Consistent Look and Feel: **CSS allows you to apply styles consistently across your entire website. This is crucial for creating a cohesive and professional brand identity. You define your website's style in CSS, and it's applied uniformly to all pages (or sections as you define).
+  - **Branding: **CSS is the primary tool for visually reflecting your brand on your website – using brand colors, fonts, and design elements consistently reinforces your identity to visitors.
+
+4. Responsiveness and Adaptability:
+  - **Device Independence: **With CSS, especially using techniques like media queries, you can create websites that adapt to different screen sizes and devices (desktops, tablets, smartphones). This is called responsive web design. Your website will look good and function well regardless of the device used to view it.
+  - **Accessibility: **While not solely CSS's responsibility, CSS plays a role in making websites more accessible. Proper use of CSS can contribute to better contrast ratios, font sizing, and overall readability for users with disabilities.
+
+5. Efficiency and Performance:
+  - **Reduced File Sizes: **Instead of repeating styling information within every HTML element (like inline styles), you can define styles in separate CSS files. This leads to smaller HTML files and can improve website loading times.
+  - **Caching: **Browsers can cache CSS files, meaning that once a user visits one page on your site, the CSS is stored locally. When they visit other pages, the browser can reuse the cached CSS, making subsequent page loads faster.
